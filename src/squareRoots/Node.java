@@ -12,7 +12,7 @@ public class Node {
    
     public Node() {
         int val = (int) Math.floor(Math.random()*2);
-        System.out.println(val);
+        //System.out.println(val);
         if(val == 0) {  //segno
             int prova = (int) Math.floor(Math.random()*2+1);
             switch(prova) {
