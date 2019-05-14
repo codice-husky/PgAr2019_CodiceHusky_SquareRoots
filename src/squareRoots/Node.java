@@ -3,7 +3,7 @@ package squareRoots;
  
 public class Node {
    
-    public static final int VALORE_MAX = 11;
+    public static final int VALORE_MAX = 10;
    
     String valore;
     Node sx;
@@ -24,7 +24,7 @@ public class Node {
             this.sx= new Node();
             this.dx= new Node();
         }else { //numero
-            this.valore =  ""+(int)((Math.random()*VALORE_MAX)+1);
+            this.valore =  ""+(int)Math.round((Math.random()*VALORE_MAX));
         }
     }
    
