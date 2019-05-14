@@ -1,3 +1,5 @@
+/*
+
 package squareRoots;
 
 public class ElementoEspressione extends Node {
@@ -8,17 +10,12 @@ public class ElementoEspressione extends Node {
 	
 	private boolean isOperazione;
 	private int valore;
-	/**
-	 * 
-	 */
+	
 	public ElementoEspressione(boolean isOperazione, int valore) {
 		super();
 		this.isOperazione = isOperazione;
 		this.valore = valore;
 	}
-	/**
-	 * @param parentNode
-	 */
 	public ElementoEspressione(boolean isOperazione, int valore, ElementoEspressione parentNode) {
 		super(parentNode);
 		this.isOperazione = isOperazione;
@@ -48,3 +45,7 @@ public class ElementoEspressione extends Node {
 	
 
 }
+
+
+*/
+
