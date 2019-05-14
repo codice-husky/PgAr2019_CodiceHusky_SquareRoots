@@ -10,8 +10,8 @@ public class SquareRootsMain {
 		Node nodo = new Node();
 		String strEspressione = nodo.getTheEspressione();
 		Expression espressione = new Expression(strEspressione);
-		String ris = mXparser.numberToAsciiString(espressione.calculate());
 		System.out.println(strEspressione);
+		double ris = espressione.calculate();
 		System.out.println("Risultato: " + ris);
 		
 		
