@@ -14,7 +14,7 @@ public class Node {
         int val = (int) Math.floor(Math.random()*2);
         System.out.println(val);
         if(val == 0) {  //segno
-            int prova = (int)Math.random()*4+1;
+            int prova = (int) Math.floor(Math.random()*2+1);
             switch(prova) {
                 case 1: this.valore = "+"; break;
                 case 2: this.valore = "-"; break;
