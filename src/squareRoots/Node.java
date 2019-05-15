@@ -8,19 +8,24 @@ public class Node {
     String valore;
     Node sx;
     Node dx;
-   
-   
+    String simboli[] = {"+","-","*","/"}; 
+    
+    /*abbiamo 2 costruttori perché il primo viene chiamato al primo
+      ciclo e conterrà sempre un simbolo, dal secondo ramo invece sarà
+      o un simbolo o un valore*/
+    public Node(String primo) {
+    	int simb = (int) Math.floor(Math.random()*4);
+    	this.valore = simboli[simb];
+    	this.sx= new Node();
+        this.dx= new Node();
+    }
+    
     public Node() {
         int val = (int) Math.floor(Math.random()*2);
         //System.out.println(val);
         if(val == 0) {  //segno
-            int prova = (int) Math.floor(Math.random()*4+1);
-            switch(prova) {
-                case 1: this.valore = "+"; break;
-                case 2: this.valore = "-"; break;
-                case 3: this.valore = "*"; break;
-                case 4: this.valore = "/"; break;
-            }
+            int simb = (int) Math.floor(Math.random()*4);
+            this.valore = simboli[simb];
             this.sx= new Node();
             this.dx= new Node();
         }else { //numero
