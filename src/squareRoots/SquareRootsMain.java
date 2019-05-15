@@ -22,9 +22,13 @@ public class SquareRootsMain {
 	public static void risultato(Expression espressione) {
 		try {			
 			double risposta = espressione.calculate();
-			System.out.println("Risultato: " + risposta);
+			if(risposta != Double.NaN) {				
+				System.out.println("Risultato: " + risposta);
+			}else {
+				System.out.println("Errore matematico: 0/0 non è accettabile");
+			}
 		}catch(Exception e) {
-			System.out.println("Errore matematico");
+			System.out.println("Errore matematico (probabilmente N/0)");
 		}
 		
 		
